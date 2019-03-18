@@ -21,7 +21,7 @@ sourceSets {
 
 
 dependencies {
-    compile group: 'com.github.javaparser', name: 'javaparser-core', version: '3.8.3'
+    compile group: 'com.github.javaparser', name: 'javaparser-core', version: '3.13.4'
     compile 'org.bitbucket.mstrobel:procyon-compilertools:0.5.33.6'
     compile "org.ow2.asm:asm:7.0"
     compile "org.ow2.asm:asm-commons:7.0"

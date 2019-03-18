@@ -3,7 +3,7 @@ package matcher.srcprocess;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.github.javaparser.JavaParser;
+import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ParseProblemException;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.Node;
@@ -54,7 +54,7 @@ public class SrcDecorator {
 		CompilationUnit cu;
 
 		try {
-			cu = JavaParser.parse(src);
+			cu = StaticJavaParser.parse(src);
 		} catch (ParseProblemException e) {
 			throw new SrcParseException(src, e);
 		}
